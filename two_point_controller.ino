@@ -4,6 +4,8 @@ const int R0 = 100000;         // R0 = 100k
 const int B_2 = 4000;            // B value of the thermistor
 const int R0_2 = 10000;          // R0 = 100k
 
+#define FAN_PWM 3;
+
 unsigned long prev_mili = 0;
 
 unsigned long interval = 1000;
@@ -57,12 +59,12 @@ void collecd_and_send_data()
     if(temperature_2 >= TEMP_TH_MAX)
     {
         analogWrite(FAN_PWM,255);
-        serial.println(1);
+        Serial.println(1);
     }
     else if(temperature_2 <= TEMP_TH_MIN)
     {
         analogWrite(FAN_PWM,0);
-        serial.println(0);
+        Serial.println(0);
     }
 }
 
