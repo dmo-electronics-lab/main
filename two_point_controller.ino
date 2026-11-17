@@ -4,7 +4,7 @@ const int R0 = 100000;         // R0 = 100k
 const int B_2 = 4000;            // B value of the thermistor
 const int R0_2 = 10000;          // R0 = 100k
 
-#define FAN_PWM 3;
+#define FAN_PWM 3
 
 unsigned long prev_mili = 0;
 
