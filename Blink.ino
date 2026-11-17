@@ -5,6 +5,6 @@ void setup() {
 
 void loop() {
   digitalWrite(LED_BUILTIN, toggle); //Toggle the digital pin
-  toggle != toggle;
+  toggle = !toggle;
   delay(500);       //wait 500ms s.t. a period is 1 secont -> corresponds to 1Hz   
 }
