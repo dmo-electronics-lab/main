@@ -32,7 +32,7 @@ void loop() {
 
     } 
 
-    if(milis() == INT_32_MAX ) //check if the timer is about to overflow
+    if(millis() == INT_32_MAX ) //check if the timer is about to overflow
     {
     //resset the milisecond counter
         prev_mili_1 = 0;
