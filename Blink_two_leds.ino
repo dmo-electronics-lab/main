@@ -20,14 +20,14 @@ void loop() {
     if ((currentMillis - prev_mili_1) >= interval_1 )
     {
         digitalWrite(2,t_1);
-        t_1 != t_1;
+        t_1 = !t_1;
         prev_mili_1 = currentMillis;
     }
     //This inverval should evaluate to true once every 100ms
     if((currentMillis - prev_mili_2)  >= interval_2)
     {
         digitalWrite(3,t_2);
-        t_2 != t_2;
+        t_2 = !t_2;
         prev_mili_2 = currentMillis;
 
     } 
